@@ -87,3 +87,21 @@ RLAST               : ______________________________________________________/‾
 | **C6** | 30.0 ns | **First Read Data Return ($T_3$)** | $T_3$ read data captured from Bank 0. ROB selects $T_3$ for R channel. **`RVALID` asserts with `RID=0x7` and `RLAST=1`!** (Out-of-Order: $T_3$ was issued *after* $T_2$, but finishes *first*!). |
 | **C7** | 35.0 ns | **Second Read Data Return ($T_2$)** | $T_2$ read data captured from Bank 1. ROB drives R channel with `RID=0x4` and `RLAST=1`. All transactions completed. |
 | **C8** | 40.0 ns | Idle / Clean State | All CAM entries retired to `CAM_STATE_FREE`. Zero outstanding transactions. |
+
+---
+
+## 4. Software Waveform Viewer & Simulation Run Visuals
+
+### 4.1 Digital Logic Simulation Waveform Capture
+The screenshot below shows the software waveform viewer execution displaying AXI5 channels, dynamic bank requests, bank grants, and out-of-order data delivery:
+
+![AXI5 Simulation Waveform Run](waveform_simulation_run.jpg)
+
+* **Marker at 70ns:** Simultaneous Bank Conflict on Bank 2 (`bank_req[2]` asserted by multiple entries; dynamic Round-Robin arbiter prioritizes Entry 0, holding Entry 1).
+* **Marker at 120ns:** Out-of-Order Read Data Return (`T3` targeting Bank 0 returns on `RVALID/RID=0x7` before `T2` targeting congested Bank 1).
+
+### 4.2 UVM 1.2 Testbench Simulation Console Execution
+The console capture below shows the software execution of QuestaSim running the comprehensive UVM 1.2 stress test with zero errors and 100% data integrity:
+
+![QuestaSim UVM 1.2 Simulation Console Run](uvm_simulation_run.jpg)
+
