@@ -1,0 +1,1001 @@
+$date
+	Fri Sep 25 13:00:54 2026
+$end
+$version
+	QuestaSim Version 10.7c
+$end
+$timescale
+	1ps
+$end
+
+$scope module tb_standalone $end
+
+$scope task axi_write $end
+$upscope $end
+
+$scope task axi_read $end
+$upscope $end
+
+$scope module dut $end
+$var reg 1 ! WREADY $end
+$var reg 4 " BID [3:0] $end
+$var reg 1 # BVALID $end
+$var reg 4 $ RID [3:0] $end
+$var reg 64 % RDATA [63:0] $end
+$var reg 1 & RLAST $end
+$var reg 1 ' RVALID $end
+$var reg 1 ( alloc_gnt $end
+$var reg 3 ) alloc_idx [2:0] $end
+$var reg 1 * cam_full $end
+$var reg 8 + retire_ack [7:0] $end
+$var reg 4 , pending_writes [3:0] $end
+$var reg 4 - pending_reads [3:0] $end
+$var reg 1 . cam_write_prio_override $end
+$var reg 1 / raw_hazard_stall_event $end
+$var reg 1 0 ooo_return_event $end
+$var reg 2 1 internal_bresp [1:0] $end
+$var reg 2 2 internal_rresp [1:0] $end
+
+$scope begin gen_sram_banks[3] $end
+
+$scope module u_sram_bank $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_sram_banks[2] $end
+
+$scope module u_sram_bank $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_sram_banks[1] $end
+
+$scope module u_sram_bank $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_sram_banks[0] $end
+
+$scope module u_sram_bank $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_bank_arbiters[3] $end
+
+$scope module u_bank_arbiter $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_bank_arbiters[2] $end
+
+$scope module u_bank_arbiter $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_bank_arbiters[1] $end
+
+$scope module u_bank_arbiter $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_bank_arbiters[0] $end
+
+$scope module u_bank_arbiter $end
+$upscope $end
+$upscope $end
+
+$scope module u_cam_tracker $end
+$upscope $end
+
+$scope module u_rob $end
+$upscope $end
+$upscope $end
+
+$scope module sva_inst $end
+
+$scope begin gen_raw_assert_r[7] $end
+
+$scope begin gen_raw_assert_w[7] $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[6] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[5] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[4] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[3] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[2] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[1] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[0] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_r[6] $end
+
+$scope begin gen_raw_assert_w[7] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[6] $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[5] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[4] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[3] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[2] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[1] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[0] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_r[5] $end
+
+$scope begin gen_raw_assert_w[7] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[6] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[5] $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[4] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[3] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[2] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[1] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[0] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_r[4] $end
+
+$scope begin gen_raw_assert_w[7] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[6] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[5] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[4] $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[3] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[2] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[1] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[0] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_r[3] $end
+
+$scope begin gen_raw_assert_w[7] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[6] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[5] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[4] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[3] $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[2] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[1] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[0] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_r[2] $end
+
+$scope begin gen_raw_assert_w[7] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[6] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[5] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[4] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[3] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[2] $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[1] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[0] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_r[1] $end
+
+$scope begin gen_raw_assert_w[7] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[6] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[5] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[4] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[3] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[2] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[1] $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[0] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_r[0] $end
+
+$scope begin gen_raw_assert_w[7] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[6] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[5] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[4] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[3] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[2] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[1] $end
+
+$scope begin gen_diff_entries $end
+
+$scope begin assert_raw_hazard_avoidance $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_raw_assert_w[0] $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_write_prio_assert[3] $end
+
+$scope begin assert_write_prio_override_effective $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_write_prio_assert[2] $end
+
+$scope begin assert_write_prio_override_effective $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_write_prio_assert[1] $end
+
+$scope begin assert_write_prio_override_effective $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_write_prio_assert[0] $end
+
+$scope begin assert_write_prio_override_effective $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_bank_mutex_assert[3] $end
+
+$scope begin assert_bank_mutex $end
+$upscope $end
+
+$scope begin assert_bank_gnt_idx_match $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_bank_mutex_assert[2] $end
+
+$scope begin assert_bank_mutex $end
+$upscope $end
+
+$scope begin assert_bank_gnt_idx_match $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_bank_mutex_assert[1] $end
+
+$scope begin assert_bank_mutex $end
+$upscope $end
+
+$scope begin assert_bank_gnt_idx_match $end
+$upscope $end
+$upscope $end
+
+$scope begin gen_bank_mutex_assert[0] $end
+
+$scope begin assert_bank_mutex $end
+$upscope $end
+
+$scope begin assert_bank_gnt_idx_match $end
+$upscope $end
+$upscope $end
+
+$scope begin assert_r_channel_stable $end
+$upscope $end
+
+$scope begin assert_b_channel_stable $end
+$upscope $end
+
+$scope begin assert_no_x_on_control $end
+$upscope $end
+
+$scope begin assert_no_alloc_when_full_aw $end
+$upscope $end
+
+$scope begin assert_no_alloc_when_full_ar $end
+$upscope $end
+
+$scope begin assert_wready_valid_target $end
+$upscope $end
+
+$scope begin assert_rlast_valid $end
+$upscope $end
+
+$scope begin assert_rresp_valid $end
+$upscope $end
+
+$scope begin assert_bresp_valid $end
+$upscope $end
+
+$scope begin cover_bank_conflict $end
+$upscope $end
+
+$scope begin cover_ooo_read_event $end
+$upscope $end
+
+$scope begin cover_write_prio_override_trigger $end
+$upscope $end
+
+$scope begin cover_raw_hazard_stall $end
+$upscope $end
+
+$scope begin cover_cam_fully_occupied $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b0 "
+0#
+b0 $
+b0 %
+0&
+0'
+0(
+b0 )
+0*
+b0 +
+b0 ,
+b0 -
+0.
+0/
+00
+b0 1
+b0 2
+$end
+#27500
+1(
+#32500
+b1 ,
+0(
+1!
+b1 )
+#37500
+0!
+#42500
+1(
+#47500
+0(
+1!
+b10 )
+1#
+b1 +
+#52500
+0!
+b0 )
+0#
+b0 +
+#57500
+1(
+#62500
+b10 "
+b10 $
+0(
+1!
+b10 )
+b1 "
+1#
+b10 +
+#67500
+0!
+b1 )
+b10 "
+0#
+b0 +
+#72500
+1(
+#77500
+0(
+1!
+b10 )
+1#
+b1 +
+#82500
+0!
+b0 )
+0#
+b0 +
+#92500
+b0 ,
+b11 "
+1#
+b10 +
+#97500
+b10 "
+0#
+b0 +
+#112500
+1(
+#117500
+b0 "
+b0 $
+b1 -
+0(
+b1 )
+#122500
+1(
+#127500
+b1000100010001001000100010001000110011001100110100010001000100 %
+0(
+b10 )
+1&
+1'
+b1 +
+#132500
+1(
+b0 )
+0&
+0'
+b0 +
+#137500
+b10 "
+b10 $
+0(
+b10 )
+1&
+1'
+b101010101010101011001100110011001110111011101111000100010001000 %
+b1 $
+10
+b10 +
+#142500
+1(
+b1 )
+b1000100010001001000100010001000110011001100110100010001000100 %
+b10 $
+0&
+0'
+00
+b0 +
+#147500
+b1001100110011001101010101010101010111011101110111100110011001100 %
+0(
+b10 )
+1&
+1'
+b1 +
+#152500
+b0 )
+0&
+0'
+b0 +
+#157500
+b0 -
+1&
+1'
+b1101110111011101111011101110111011111111111111110000000000000000 %
+b11 $
+b10 +
+#162500
+b1001100110011001101010101010101010111011101110111100110011001100 %
+b10 $
+0&
+0'
+b0 +
+#197500
+1(
+#202500
+b100 "
+b100 $
+b1 ,
+0(
+1!
+b1 )
+#207500
+0!
+#212500
+1(
+#217500
+0(
+1!
+b10 )
+1#
+b1 +
+#222500
+0!
+b0 )
+0#
+b0 +
+#227500
+1(
+#232500
+b110 "
+b110 $
+0(
+1!
+b10 )
+b101 "
+1#
+b10 +
+#237500
+0!
+b1 )
+b110 "
+0#
+b0 +
+#242500
+1(
+#247500
+0(
+1!
+b10 )
+1#
+b1 +
+#252500
+0!
+b0 )
+0#
+b0 +
+#262500
+b0 ,
+b111 "
+1#
+b10 +
+#267500
+b110 "
+0#
+b0 +
+#292500
+1(
+#297500
+b1000 "
+b1000 $
+b1 ,
+0(
+1!
+b1 )
+#302500
+0!
+#307500
+1(
+#312500
+b1 -
+b0 ,
+0(
+b10 )
+1#
+b1 +
+#317500
+b0 )
+0#
+b0 +
+#322500
+b0 -
+1&
+1'
+b1100101011111110101110101011111011011110101011011011111011101111 %
+b1001 $
+b10 +
+#327500
+b1001100110011001101010101010101010111011101110111100110011001100 %
+b1000 $
+0&
+0'
+b0 +

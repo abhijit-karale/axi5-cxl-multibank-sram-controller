@@ -1,0 +1,27 @@
+[options]
+mode prove
+depth 25
+
+[engines]
+smtbmc boolector
+
+[script]
+read -formal axi5_pkg.sv
+read -formal sram_bank_16k.sv
+read -formal axi5_bank_arbiter.sv
+read -formal axi5_cam_tracker.sv
+read -formal axi5_rob.sv
+read -formal axi5_sram_controller.sv
+read -formal axi5_sva.sv
+read -formal axi5_formal_bind.sv
+prep -top axi5_sram_controller
+
+[files]
+../../rtl/axi5_pkg.sv
+../../rtl/sram_bank_16k.sv
+../../rtl/axi5_bank_arbiter.sv
+../../rtl/axi5_cam_tracker.sv
+../../rtl/axi5_rob.sv
+../../rtl/axi5_sram_controller.sv
+axi5_sva.sv
+axi5_formal_bind.sv

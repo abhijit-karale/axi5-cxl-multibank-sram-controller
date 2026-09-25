@@ -1,0 +1,58 @@
+# vsim -c -nodpiexports -do "run -all; quit -f" tb_standalone 
+# Start time: 13:00:53 on Sep 25,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.axi5_pkg(fast)
+# Loading work.axi5_bank_arbiter_sv_unit(fast)
+# Loading work.axi5_sram_controller_sv_unit(fast)
+# Loading work.tb_standalone_sv_unit(fast)
+# Loading work.tb_standalone(fast)
+# Loading work.axi5_cam_tracker_sv_unit(fast)
+# Loading work.axi5_cam_tracker(fast)
+# Loading work.axi5_rob_sv_unit(fast)
+# Loading work.axi5_rob(fast)
+# Loading work.axi5_sva_sv_unit(fast)
+# Loading work.axi5_sva(fast)
+# run -all
+# 
+# [1;36m========================================================================[0m
+# [1;36m AXI5 / CXL.mem Coherent Multi-Bank Controller Standalone Verification  [0m
+# [1;36m Candidate: Abhijit Karale | SkyWater 130nm @ 200 MHz                    [0m
+# [1;36m========================================================================[0m
+# 
+# [TIME: 23000 ns] Reset deasserted. SRAM controller online.
+# 
+# [1;33m[TEST 1] Populating Memory across All 4 Banks (Word-Interleaved)...[0m
+# 
+# [1;33m[TEST 2] Injecting Simultaneous Bank Conflicts on Bank 2 (Round-Robin & Override)...[0m
+# 
+# [1;33m[TEST 3] Testing RAW Hazard Stall & Forwarding Consistency...[0m
+# 
+# [1;32m========================================================================[0m
+# [1;32m                 HARDWARE TELEMETRY & AUDIT REPORT                      [0m
+# [1;32m========================================================================[0m
+#  Total Transactions Completed : 14
+#  Bank Conflicts Detected      : 0
+#  Out-of-Order Returns         : 1
+#  RAW Hazard Stalls Avoided    : 0
+# [1;32m [STATUS] ALL SVA ASSERTIONS PROVED. ZERO FATAL PROTOCOL VIOLATIONS.    [0m
+# [1;32m========================================================================[0m
+# 
+# ** Note: $finish    : tb/sim/tb_standalone.sv(252)
+#    Time: 412500 ps  Iteration: 0  Instance: /tb_standalone
+# End time: 13:00:54 on Sep 25,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

@@ -1,0 +1,126 @@
+/* ==============================================================================
+ * File: syn/sky130_hd.lib
+ * Description: Liberty Timing and Functional Model for SkyWater 130nm
+ *              High-Density (sky130_fd_sc_hd) standard cells for Yosys mapping.
+ * Author: Abhijit Karale (Principal Silicon Architect & Staff DV Engineer)
+ * ============================================================================== */
+
+library (sky130_fd_sc_hd) {
+  technology (cmos);
+  delay_model : table_lookup;
+  time_unit : "1ns";
+  voltage_unit : "1V";
+  current_unit : "1mA";
+  pulling_resistance_unit : "1kohm";
+  capacitive_load_unit (1, pf);
+
+  nom_process : 1.0;
+  nom_temperature : 25.0;
+  nom_voltage : 1.80;
+
+  default_max_transition : 1.5;
+  default_fanout_load : 1.0;
+
+  cell (sky130_fd_sc_hd__inv_1) {
+    area : 3.4496;
+    pin (A) { direction : input; }
+    pin (Y) {
+      direction : output;
+      function : "!A";
+    }
+  }
+
+  cell (sky130_fd_sc_hd__buf_1) {
+    area : 4.5995;
+    pin (A) { direction : input; }
+    pin (X) {
+      direction : output;
+      function : "A";
+    }
+  }
+
+  cell (sky130_fd_sc_hd__nand2_1) {
+    area : 5.7493;
+    pin (A) { direction : input; }
+    pin (B) { direction : input; }
+    pin (Y) {
+      direction : output;
+      function : "!(A & B)";
+    }
+  }
+
+  cell (sky130_fd_sc_hd__nor2_1) {
+    area : 5.7493;
+    pin (A) { direction : input; }
+    pin (B) { direction : input; }
+    pin (Y) {
+      direction : output;
+      function : "!(A | B)";
+    }
+  }
+
+  cell (sky130_fd_sc_hd__and2_1) {
+    area : 6.8992;
+    pin (A) { direction : input; }
+    pin (B) { direction : input; }
+    pin (X) {
+      direction : output;
+      function : "(A & B)";
+    }
+  }
+
+  cell (sky130_fd_sc_hd__or2_1) {
+    area : 6.8992;
+    pin (A) { direction : input; }
+    pin (B) { direction : input; }
+    pin (X) {
+      direction : output;
+      function : "(A | B)";
+    }
+  }
+
+  cell (sky130_fd_sc_hd__xor2_1) {
+    area : 9.1989;
+    pin (A) { direction : input; }
+    pin (B) { direction : input; }
+    pin (X) {
+      direction : output;
+      function : "(A ^ B)";
+    }
+  }
+
+  cell (sky130_fd_sc_hd__mux2_1) {
+    area : 9.1989;
+    pin (A0) { direction : input; }
+    pin (A1) { direction : input; }
+    pin (S)  { direction : input; }
+    pin (X)  {
+      direction : output;
+      function : "(S ? A1 : A0)";
+    }
+  }
+
+  cell (sky130_fd_sc_hd__dfxtp_1) {
+    area : 16.0981;
+    ff (IQ, IQN) {
+      clocked_on : "CLK";
+      next_state : "D";
+    }
+    pin (CLK) { direction : input; clock : true; }
+    pin (D)   { direction : input; }
+    pin (Q)   { direction : output; function : "IQ"; }
+  }
+
+  cell (sky130_fd_sc_hd__dfrtp_1) {
+    area : 18.3978;
+    ff (IQ, IQN) {
+      clocked_on : "CLK";
+      next_state : "D";
+      clear : "!RESET_B";
+    }
+    pin (CLK)     { direction : input; clock : true; }
+    pin (D)       { direction : input; }
+    pin (RESET_B) { direction : input; }
+    pin (Q)       { direction : output; function : "IQ"; }
+  }
+}
