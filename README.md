@@ -262,6 +262,14 @@ uvm_test_top (axi5_stress_test / axi5_base_test)
 # Errors: 0, Warnings: 0
 ```
 
+### Software Simulation Waveform & Execution Captures
+
+#### 1. EDA Waveform Viewer: Bank Conflicts & Out-of-Order Read Data Return
+![EDA Waveform Run](docs/waveform_simulation_run.jpg)
+
+#### 2. QuestaSim UVM 1.2 Testbench Console Execution (0 Errors, 100% Match)
+![QuestaSim UVM Simulation Run](docs/uvm_simulation_run.jpg)
+
 ---
 
 ## 8. Synthesis & Timing Sign-Off (`syn/`)
